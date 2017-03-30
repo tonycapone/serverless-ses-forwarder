@@ -25,7 +25,7 @@ Under the hood, this app uses arithmetric's fantastic [aws-lambda-ses-forwarder]
 
 4. Configure the Lambda Function
    
-Edit `overrides.config` object in `index.js` with your configuration. See the [aws-lambda-ses-forwarder](https://github.com/arithmetric/aws-lambda-ses-forwarder) project for more information about configuration. 
+Edit `config.yml` with your configuration. See the [aws-lambda-ses-forwarder](https://github.com/arithmetric/aws-lambda-ses-forwarder) project for more information about configuration options. 
 
 5. Deploy it
 
