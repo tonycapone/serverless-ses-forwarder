@@ -25,16 +25,16 @@ Under the hood, this app uses arithmetric's fantastic [aws-lambda-ses-forwarder]
 
 4. Configure the Lambda Function
    
-Edit `config.yml` with your configuration. See the [aws-lambda-ses-forwarder](https://github.com/arithmetric/aws-lambda-ses-forwarder) project for more information about configuration options. 
+   Edit `config.yml` with your configuration. See the [aws-lambda-ses-forwarder](https://github.com/arithmetric/aws-lambda-ses-forwarder) project for more information about configuration options. 
 
 5. Deploy it
 
-`serverless deploy`
+   `serverless deploy`
 
 6. Configure SES
 
-Once the stack is stood up, you will need to set-up AWS SES to route incoming emails to your Lambda function. Regretfully, this is a manual step until such time as Amazon provides CloudFormation support for SES. 
+   Once the stack is stood up, you will need to set-up AWS SES to route incoming emails to your Lambda function. Regretfully, this is a manual step until such time as Amazon provides CloudFormation support for SES. 
 
-Follow steps 3-6 in the [aws-lambda-ses-forwarder README](https://github.com/arithmetric/aws-lambda-ses-forwarder/blob/master/README.md).
+   Follow steps 3-6 in the [aws-lambda-ses-forwarder README](https://github.com/arithmetric/aws-lambda-ses-forwarder/blob/master/README.md).
 
 
