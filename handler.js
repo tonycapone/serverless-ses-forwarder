@@ -5,12 +5,24 @@ var forwarder = require('aws-lambda-ses-forwarder')
 module.exports.handle = (event, context, callback) => {
   var overrides = {
     config: {
-      emailKeyPrefix: "",
-      emailBucket: process.env.emailBucket,
+      fromEmail: "noreply@example.com",
+      subjectPrefix: "",
+      emailBucket: "s3-bucket-name",
+      emailKeyPrefix: "emailsPrefix/",
       forwardMapping: {
-        "@ezmails.xyz": [
-          "anthonyrhowell@gmail.com"
+        "info@example.com": [
+          "example.john@example.com",
+          "example.jen@example.com"
         ],
+        "abuse@example.com": [
+          "example.jim@example.com"
+        ],
+        "@example.com": [
+          "example.john@example.com"
+        ],
+        "info": [
+          "info@example.com"
+        ]
       }
     }
   };
