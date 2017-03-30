@@ -1,7 +1,6 @@
 config:
-  fromEmail: noreply@example.com
+  fromEmail: noreply@ezmails.xyz
   subjectPrefix: ''
-  emailBucket: s3-bucket-name
   emailKeyPrefix: emailsPrefix/
   forwardMapping:
     info@example.com:
