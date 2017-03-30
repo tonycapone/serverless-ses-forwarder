@@ -9,6 +9,7 @@
   "author": "Anthony Howell anthonyrhowell@gmail.com",
   "license": "MIT",
   "dependencies": {
-    "aws-lambda-ses-forwarder":"4.1.0"
+    "aws-lambda-ses-forwarder":"4.1.0",
+    "js-yaml":"3.8.2"
   }
 }
