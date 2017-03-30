@@ -11,17 +11,26 @@ This module will automate the provisioning of the Lambda function, S3 buckets, a
 
 ## Getting started
 
-This project requires [Serverless](https://serverless.com) to be installed:
+## Install Serverless and provision AWS
+1. Setup your [AWS Credentials](https://github.com/serverless/serverless/blob/master/docs/providers/aws/guide/credentials.md)
+2. Install [Serverless.js](https://serverless.com)
 
-`npm install -g serverless`
+  ```
+  npm install -g serverless
+  ```
+3. Install this Service
 
-Then, to pull down this service:
+  ```
+  serverless install --url https://github.com/tonycapone/serverless-ses-forwarder
+  cd serverless-ses-forwarder
+  npm install
+  ```
 
-`serverless install --url https://github.com/tonycapone/serverless-ses-forwarder`
+4. Configure the Lambda Function
+   
+  Edit `overrides.config` object in `index.js` with your configuration. See the [aws-lambda-ses-forwarder](https://github.com/arithmetric/aws-lambda-ses-forwarder) project for more information about configuration. 
 
-Edit `overrides.config` object in `index.js` with your configuration. See the [aws-lambda-ses-forwarder](https://github.com/arithmetric/aws-lambda-ses-forwarder) project for more information about configuration. 
-
-The run:
+5. Run it
 
 `serverless deploy`
 
