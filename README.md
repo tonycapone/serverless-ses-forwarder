@@ -1,7 +1,7 @@
 # serverless-aws-lambda-ses-forwarder
 
 A [Serverless](https://serverless.com) Service for setting up an email forwarding app
-using [AWS Simple Email Service](https://aws.amazon.com/ses/) and Lambda. 
+using [AWS Simple Email Service](https://aws.amazon.com/ses/) and Lambda. You can configure the service to forward by email address, as well as by domain/wildcard/catchall. 
 
 Under the hood, this app uses arithmetric's fantastic [aws-lambda-ses-forwarder](https://github.com/arithmetric/aws-lambda-ses-forwarder).
 
@@ -25,7 +25,7 @@ Under the hood, this app uses arithmetric's fantastic [aws-lambda-ses-forwarder]
 
 4. Configure the Lambda Function
    
-   Edit `config.yml` with your configuration. See the [aws-lambda-ses-forwarder](https://github.com/arithmetric/aws-lambda-ses-forwarder) project for more information about configuration options. 
+   Edit `config.yml`. This file contains the rules for forwarding emails, as well as more fine grained options. It directly maps to the config object in [aws-lambda-ses-forwarder](https://github.com/arithmetric/aws-lambda-ses-forwarder), so see that project for all the available options. 
 
 5. Deploy it
 
