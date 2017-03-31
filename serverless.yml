@@ -19,6 +19,8 @@ provider:
 functions:
   sesForwarder:
     handler: handler.handle
+    timeout: 10
+    memorySize: 128
     environment:
       emailBucket: 
          Ref: SesForwarderBucket
