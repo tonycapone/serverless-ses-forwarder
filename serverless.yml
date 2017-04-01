@@ -32,6 +32,10 @@ resources:
      Properties:
       BucketName: 
         Fn::Join: ["", ["sesforwarder-",{ "Ref" : "AWS::AccountId" }  ] ]
+      LifecycleConfiguration:
+        Rules:
+           - ExpirationInDays: 3
+             Status: Enabled
    SesForwarderBucketPolicy:
       Type: AWS::S3::BucketPolicy
       Properties:
