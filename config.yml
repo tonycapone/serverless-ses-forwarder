@@ -1,5 +1,6 @@
 config:
   fromEmail: noreply@example.com
+  emailKeyPrefix: ''
   subjectPrefix: 'Forwarded: '
   forwardMapping:
     info@example.com:
